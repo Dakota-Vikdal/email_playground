@@ -10,8 +10,8 @@ html = Template(Path('index.html').read_text())
 # the subject of the email
 email = EmailMessage()
 email['from'] = 'Nat the Bat'
-email['to'] = 'yogadaddy666@gmail.com'
-email['subject'] = 'I am the coolest arent I!! THE COSMOS FLOW THROUGH ME LIKE A TURD FLOWS THROUGH YOU!'
+email['to'] = 'example1996@hotmail.com'
+email['subject'] = 'Am I cool or what?!'
 
 # Utilize the dynamic aspect of the html file. In this case, name.
 email.set_content(html.substitute({'name': '!NatAttack!'}), 'html')
@@ -23,4 +23,3 @@ with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
     smtp.login('natdoe4@gmail.com', 'ldvc mesb emsn mbux')
     smtp.send_message(email)
     print('all good boss!')
-        

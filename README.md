@@ -1,5 +1,5 @@
 # email_playground
-In this project I've created a dummy gmail account that I used in order to send emails from Python. 
+In this project I've created a dummy gmail account that I used in order to send emails via a Python script. 
 
 I started with importing all the required libraries. 
 

@@ -20,6 +20,6 @@ email.set_content(html.substitute({'name': '!NatAttack!'}), 'html')
 with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
     smtp.ehlo()
     smtp.starttls()
-    smtp.login('natdoe4@gmail.com', 'ldvc mesb emsn mbux')
+    smtp.login('example@gmail.com', 'ldvc mesb emsn mbux')
     smtp.send_message(email)
     print('all good boss!')
